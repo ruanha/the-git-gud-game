@@ -3,6 +3,7 @@
 # Reset Level
 
 # Increment Level
+![Increment level diagram](./increment-level.svg)
 
 # Increment Sublevel
 
