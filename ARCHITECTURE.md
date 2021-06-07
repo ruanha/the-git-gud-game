@@ -1,6 +1,7 @@
 # Check solution
 
 # Reset Level
+![Reset level diagram](./reset.svg)
 
 # Increment Level
 ![Increment level diagram](./increment-level.svg)
