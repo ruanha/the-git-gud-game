@@ -1,5 +1,7 @@
 #!/bin/bash
-LVL=$( < "./LVL")
+SCRIPT_DIR=$( dirname "${BASH_SOURCE[0]}" )
+LVL_PATH="$SCRIPT_DIR/LVL"
+LVL=$( < "$LVL_PATH" ) 
 
-./set-lvl.sh $(( $LVL + 1 ))
+"$SCRIPT_DIR/set-lvl.sh" $(( $LVL + 1 ))
 
