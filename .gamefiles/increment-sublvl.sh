@@ -1,5 +1,7 @@
 #!/bin/bash
-SUBLVL=$( < "./SUBLVL")
+SCRIPT_DIR=$( dirname "${BASH_SOURCE[0]}" )
+SUBLVL_PATH="$SCRIPT_DIR/SUBLVL"
+SUBLVL=$( < "$SUBLVL_PATH" ) 
 
-./set-sublvl.sh $(( $SUBLVL + 1 ))
+"$SCRIPT_DIR/set-sublvl.sh" $(( $SUBLVL + 1 ))
 
