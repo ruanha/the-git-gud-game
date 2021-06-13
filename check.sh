@@ -16,10 +16,10 @@ LVL=$( < ".gamefiles/LVL" )
 SUBLVL=$( < ".gamefiles/SUBLVL" )
 
 # execute solution checking file
-"./.gamefiles/solutions/$LVL/solution.sh"
+"./.gamefiles/solutions/$LVL/solution.sh" $SUBLVL
 return_code=$?
 
-if [ $return_code -eq 0 ]; then
+if [ ! $return_code -eq 0 ]; then
 	echo "Your solution is wrong"
 	exit 0
 fi
