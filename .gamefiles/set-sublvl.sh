@@ -7,3 +7,7 @@ SUBLVL=$( < "$THIS_PATH/SUBLVL" )
 
 EMAIL=$( < "$THIS_PATH/solutions/$LVL/$SUBLVL/email" )
 echo $EMAIL > "email.inbox"
+
+echo "############ EMAIL INBOX ############"
+echo -e $EMAIL
+echo "#####################################"
