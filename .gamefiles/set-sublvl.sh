@@ -6,5 +6,4 @@ LVL=$( < "$THIS_PATH/LVL" )
 SUBLVL=$( < "$THIS_PATH/SUBLVL" )
 
 EMAIL=$( < "$THIS_PATH/solutions/$LVL/$SUBLVL/email" )
-echo "youve for mail $EMAIL"
 echo $EMAIL > "email.inbox"
