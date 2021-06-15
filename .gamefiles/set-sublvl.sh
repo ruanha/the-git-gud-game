@@ -6,8 +6,8 @@ LVL=$( < "$THIS_PATH/LVL" )
 SUBLVL=$( < "$THIS_PATH/SUBLVL" )
 
 EMAIL=$( < "$THIS_PATH/solutions/$LVL/$SUBLVL/email" )
-echo $EMAIL > "email.inbox"
+cat "$THIS_PATH/solutions/$LVL/$SUBLVL/email" > "email.inbox"
 
 echo "############ EMAIL INBOX ############"
-echo -e $EMAIL
+cat "$THIS_PATH/solutions/$LVL/$SUBLVL/email"
 echo "#####################################"
