@@ -1,9 +1,17 @@
+FROM: your-senior-colleague@company.com
 
-FROM: the-boss@company.com
+TITLE: Hello new blood!!
 
-TITLE: get to work!
+Hi git-gimp!
 
-Hey man please fix.
+To check that you are not a cokmplete moron I need you to clone the app you will be working on.
 
-cheers,
-the boss
+The repo is at: git-gud.com/ACompany/ACompany-app.git
+
+so just clone that adress...
+
+and then let me know when you are finished.
+
+Best Regards,
+Brenda, Senior Dev
+ACompany.com

@@ -1,3 +1,2 @@
-ORG_NAME="mock-org-0"
-APP_NAME="mock-app-0"
-
+ORG_NAME="ACompany"
+APP_NAME="ACompany-app"
