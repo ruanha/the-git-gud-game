@@ -16,7 +16,7 @@ LVL=$( < ".gamefiles/LVL" )
 SUBLVL=$( < ".gamefiles/SUBLVL" )
 
 # execute solution checking file
-"./.gamefiles/solutions/$LVL/solution.sh" $SUBLVL
+"./.gamefiles/solutions/$LVL/$SUBLVL/solution.sh" $LVL $SUBLVL
 return_code=$?
 
 if [ ! $return_code -eq 0 ]; then
