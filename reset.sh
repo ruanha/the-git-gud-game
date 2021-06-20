@@ -8,7 +8,7 @@ source ".gamefiles/solutions/$LVL/$SUBLVL/conf.d"
 
 # remove local app and the git-gud.com remote
 rm -rf "$APP_NAME"
-rm -rf "git-gud.com/$ORG_NAME/$APP_NAME.git"
+rm -rf "git-gud.com/$ORG_NAME"
 
 # set sublvl back to zero. This includes setting the email
 # message and replacing the repo
