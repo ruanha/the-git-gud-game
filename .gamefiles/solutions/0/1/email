@@ -1,15 +1,11 @@
-FROM: your-senior-colleague@ACompany.com
-
 Hi there git-fool!
 
-Okay so you are not a "complete" moron. That's nice.
+Nice.
 
-Now i need you to checkout the branch "add-README.md"
+Now I created a remote with the same name at our account at:
 
-You think you can do that?
+git-gud.com/Acompany/ACompany-app.git
+
+push to this remote.
 
 As always let me know when your done.
-
-Best Regards,
-Brenda, Senior Dev
-ACompany.com
