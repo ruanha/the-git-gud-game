@@ -4,13 +4,7 @@ TITLE: Hello new blood!!
 
 Hi git-gimp!
 
-To check that you are not a cokmplete moron I need you to clone the app you will be working on.
-
-The repo is at: git-gud.com/ACompany/ACompany-app.git
-
-so just clone that adress...
-
-and then let me know when you are finished.
+I need you to initialize a git repo, name it ACompany-app. It will host our newest app.
 
 Best Regards,
 Brenda, Senior Dev
