@@ -10,3 +10,4 @@ cd "git-gud.com"
 mkdir $ORG_NAME
 cd $ORG_NAME
 git init --bare "$APP_NAME.git" --quiet >> /dev/null
+cd ../..

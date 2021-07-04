@@ -31,8 +31,8 @@ for item in $CHECKLIST; do
 	fi
 	if [ $item == "custom" ]; then
 		echo "MUST CHECK CUSTOM SCRIPT"
-		source .gamefiles/solutions/$LVL/$SUBLVL/solution.sh
-	fi	
+		source .gamefiles/solutions/$LVL/$SUBLVL/solution.sh $ORG_NAME $APP_NAME
+	fi
 done
 
 if ! $solution_is_correct; then
