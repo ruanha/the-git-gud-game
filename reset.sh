@@ -1,5 +1,7 @@
 #!/bin/bash
 
+".gamefiles/init-lvl.sh"
+
 LVL=$( < ".gamefiles/LVL" )
 SUBLVL=0
 
@@ -17,12 +19,15 @@ rm -rf ".gamefiles/solutions/$LVL/$SUBLVL/$APP_NAME"
 .gamefiles/set-sublvl.sh $SUBLVL
 
 #source .gamefiles/solution/$LVL/$SUBLVL/init.sh 
+if [[ ! -d git-gud.com ]]; then
+    mkdir "git-gud.com"
+fi
 cd git-gud.com/
 mkdir $ORG_NAME
 cd $ORG_NAME
-git init --bare "$APP_NAME.git" > /dev/null
+git init --bare "$APP_NAME.git" --quiet >> /dev/null
 
-git clone "$APP_NAME.git" > /dev/null
+git clone "$APP_NAME.git" --quiet >> /dev/null 2>&1
 cd "$APP_NAME"
 
 # init the remote repo
