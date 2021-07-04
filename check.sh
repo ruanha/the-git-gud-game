@@ -32,6 +32,7 @@ for item in $CHECKLIST; do
 			echo "local repo is wrong!"
 			solution_is_correct=false
 		fi
+		removeLocalRepos $LVL $SUBLVL $APP_NAME;
 	fi
 	if [ $item == "remote" ]; then
 		echo "MUST CHECK REMOTE"
