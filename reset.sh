@@ -2,35 +2,19 @@
 
 ".gamefiles/init-lvl.sh"
 
-LVL=$( < ".gamefiles/LVL" )
+LVL=0 #$( < ".gamefiles/LVL" )
 SUBLVL=0
 
 # get APP_NAME and ORG_NAME from conf.d
 source ".gamefiles/solutions/$LVL/$SUBLVL/conf.d"
 
-# remove local app, the git-gud.com remote and the solutions repo if it exists
+# remove local app and the git-gud.com remote
 rm -rf "$APP_NAME"
 rm -rf "git-gud.com/$ORG_NAME"
-rm -rf ".gamefiles/solutions/$LVL/$SUBLVL/$APP_NAME"
 
 # set sublvl back to zero. This includes setting the email
 # message and replacing the repo
 .gamefiles/set-lvl.sh $LVL
 .gamefiles/set-sublvl.sh $SUBLVL
-
-#source .gamefiles/solution/$LVL/$SUBLVL/init.sh 
-if [[ ! -d git-gud.com ]]; then
-    mkdir "git-gud.com"
-fi
-cd git-gud.com/
-mkdir $ORG_NAME
-cd $ORG_NAME
-git init --bare "$APP_NAME.git" --quiet >> /dev/null
-
-git clone "$APP_NAME.git" --quiet >> /dev/null 2>&1
-cd "$APP_NAME"
-
-# init the remote repo
-source "../../../.gamefiles/solutions/$LVL/$SUBLVL/init.sh"
 
 rm -rf "$APP_NAME"
